@@ -1,0 +1,18 @@
+$colorYellow: #FCB72B; 
+$colorDarkNavy: #495567;
+$colorDimGrey: #939CAA;
+$colorLightGrey: #E5ECF4;
+$colorSnow: #F2F5F9;
+$colorLIghtYellow: #FFF4DF;
+
+@mixin link{
+    padding: 14px 39px;
+    background-color: $colorYellow;         //@include link;
+    color: $colorSnow;            
+}
+@mixin link_hover {
+    padding: 12px 37px;
+    border: 2px solid $colorYellow;
+    background-color: transparent;
+    color: $colorYellow;
+}

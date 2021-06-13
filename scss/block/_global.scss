@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, a{
+    font-family: 'Space Mono', monospace;
+}
+p, span{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: normal;
+}
+a{
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: bold;
+    display: inline-block;
+}
+li{
+    list-style-type: none;
+}
+body{
+    max-width: 1440px;
+    margin: 0 auto;
+    overflow-x: hidden;
+}

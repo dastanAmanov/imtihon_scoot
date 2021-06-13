@@ -1,0 +1,82 @@
+nav{
+    position: fixed;
+    right: 0;
+    left: 0;z-index: 99;
+    background-color: $colorSnow;
+    .navigation{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 24px 0;
+        .menu{
+            display: flex;
+            align-items: center;
+            .menu_item{
+                padding-right: 24px;
+                .menu_link{
+                    color: $colorDimGrey;
+                    &:hover{
+                        color: $colorYellow;
+                    }
+                }
+            }
+        }
+        .btn_link{
+            @include link;
+            &:hover{
+                @include link_hover;
+            }
+        }
+    }
+}
+.wrapper{
+    background-image: linear-gradient(rgba(73, 85, 103, 0.7),rgba(73, 85, 103, 0.7),), url(../img/headerBgImg.webp);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: cover;
+    padding-top: 100px;
+    .wrapper_title{
+        width: 500px;
+        font-size: 56px;
+        line-height: 56px;
+        padding-top: 130px;
+        color: $colorSnow;
+    }
+    .wrapper_subtitle{
+        width: 400px;
+        color: $colorSnow;
+        padding-left:0;
+        display: flex;
+        align-items: center;
+        padding-left: 77px;
+        position: relative;
+        &:before{
+            content: "";
+            display: block;
+            width: 530px;
+            height: 15px;
+            background-image: url(../img/imgline.png);
+            background-repeat: no-repeat;
+            position: absolute;
+            left: -165px;   
+        }
+        &:after{
+            content: "";
+            display: block;
+            width: 530px;
+            height: 150px;
+            background-image: url(../img/imgStrlka.svg);
+            background-repeat: no-repeat;
+            position: absolute;
+            left: 435px;
+            top: 45px;
+        }
+    }
+    .wrapper_link{
+        @include link;
+        margin: 55px 0 153px 76px;
+        &:hover{
+            @include link_hover;
+        }
+    }
+}

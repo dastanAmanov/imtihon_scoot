@@ -1,0 +1,62 @@
+.path_service{
+    width: 774px;
+    height: 15px;
+    margin: 160px 0;
+    display: flex;
+    align-items: center;
+    background-color: $colorLightGrey;
+    .path_box{
+        width: 20px;
+        height: 20px;
+        padding: 40px;
+        border-radius: 50%;
+        background-color: $colorYellow;
+        background-image: url(../img/path_scootin.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        margin-left: 125px;
+    }
+    .path_box2{
+        width: 20px;
+        height: 20px;
+        padding: 40px;
+        border-radius: 50%;
+        background-color: $colorYellow;
+        background-image: url(../img/path_mobile_photo.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        margin-left: 243px;
+    }
+    .path_box3{
+        width: 20px;
+        height: 20px;
+        padding: 40px;
+        border-radius: 50%;
+        background-color: $colorYellow;
+        background-image: url(../img/path_scootin_human.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        margin-left: 243px;
+    }
+}
+.services_block{
+    display: flex;
+    .service_type{
+        padding-right: 30px;
+        &:last-child{
+            padding-right: 0;
+        }
+        .service_title{
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 28px;
+            color: $colorDarkNavy;
+            padding: 24px 0;
+        }
+        .service_subtitle{
+            color: $colorDarkNavy;
+            padding-bottom: 150px;
+        }
+    }
+}
