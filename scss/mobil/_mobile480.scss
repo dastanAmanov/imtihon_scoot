@@ -58,8 +58,7 @@
         }
     }
     .wrapper{
-        width: 480px;
-        margin: 0 auto;
+        max-width: 480px;
         overflow: hidden;
         .wrapper_title{
             max-width: 480px;
@@ -86,7 +85,7 @@
     SERVICES
     ----------------*/
     .service{
-        width: 480px;
+        max-width: 480px;
         overflow-x: hidden;
         .path_service{
             display: none;
@@ -147,7 +146,7 @@
       -------------*/
      
     .riding{
-        width: 480px;
+        max-width: 480px;
         overflow-x: hidden;
         flex-wrap: wrap;
         .riding_left{
@@ -203,7 +202,7 @@
         }
     }
     .riding2{
-        width: 480px;
+        max-width: 480px;
         overflow-x: hidden;
         flex-wrap: wrap;
         .riding_right2{
@@ -248,7 +247,7 @@
        --------------*/
 
     .sign_up{
-        width: 480px;
+        max-width: 480px;
         overflow-x: hidden;
         background-position: -154% bottom, -154% bottom, 100% bottom;
         .sign_up_block{
@@ -271,7 +270,7 @@
         }
     }
     .footer_nav{
-        width: 480px;
+        max-width: 480px;
         overflow-x: hidden;
         .footer_block{
             display: block;

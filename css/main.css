@@ -800,8 +800,7 @@ nav .navigation .btn_link:hover {
     padding: 12px 78px;
   }
   .wrapper {
-    width: 480px;
-    margin: 0 auto;
+    max-width: 480px;
     overflow: hidden;
   }
   .wrapper .wrapper_title {
@@ -827,7 +826,7 @@ nav .navigation .btn_link:hover {
     SERVICES
     ----------------*/
   .service {
-    width: 480px;
+    max-width: 480px;
     overflow-x: hidden;
   }
   .service .path_service {
@@ -887,7 +886,7 @@ nav .navigation .btn_link:hover {
         RIDING
       -------------*/
   .riding {
-    width: 480px;
+    max-width: 480px;
     overflow-x: hidden;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -947,7 +946,7 @@ nav .navigation .btn_link:hover {
     top: 0;
   }
   .riding2 {
-    width: 480px;
+    max-width: 480px;
     overflow-x: hidden;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -991,7 +990,7 @@ nav .navigation .btn_link:hover {
          FOOTER 
        --------------*/
   .sign_up {
-    width: 480px;
+    max-width: 480px;
     overflow-x: hidden;
     background-position: -154% bottom, -154% bottom, 100% bottom;
   }
@@ -1014,7 +1013,7 @@ nav .navigation .btn_link:hover {
     padding-left: 12px;
   }
   .footer_nav {
-    width: 480px;
+    max-width: 480px;
     overflow-x: hidden;
   }
   .footer_nav .footer_block {
