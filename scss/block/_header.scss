@@ -1,8 +1,17 @@
 nav{
+    display: flex;
+    align-items: center;
     position: fixed;
     right: 0;
-    left: 0;z-index: 99;
+    left: 0;
+    z-index: 99;
     background-color: $colorSnow;
+    .bar{
+        display: none;
+    }
+    .logo{
+        margin-left: 120px;
+    }
     .navigation{
         display: flex;
         justify-content: space-between;
@@ -11,6 +20,7 @@ nav{
         .menu{
             display: flex;
             align-items: center;
+            padding-left: 40px;
             .menu_item{
                 padding-right: 24px;
                 .menu_link{
@@ -23,6 +33,7 @@ nav{
         }
         .btn_link{
             @include link;
+            margin-right: 120px;
             &:hover{
                 @include link_hover;
             }
@@ -69,7 +80,7 @@ nav{
             background-repeat: no-repeat;
             position: absolute;
             left: 435px;
-            top: 45px;
+            top: 42px;
         }
     }
     .wrapper_link{

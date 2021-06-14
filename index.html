@@ -7,15 +7,17 @@
     <title>scoot</title>
     <link rel="stylesheet" href="./fonts/fonts.css">
     <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/style.mini.css">
-    <!-- <link rel="stylesheet" href="./css/main.css"> -->
+    <!-- <link rel="stylesheet" href="./css/style.mini.css"> -->
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
     <header>
         <nav>
+            <img id="bar" class="bar" src="./img/bar.svg" alt="bar">
+            <a class="logo" href="#"><img src="./img/scoot.svg" alt="logo scoot"></a>
             <div class="navigation container">
                 <ul class="menu">
-                    <li class="menu_item"><a href="#"><img src="./img/scoot.svg" alt="logo scoot"></a></li>
+                    <li class="menu_item"></li>
                     <li class="menu_item"><a class="menu_link" href="about.html">About</a></li>
                     <li class="menu_item"><a class="menu_link" href="lacation.html">Lacation</a></li>
                     <li class="menu_item"><a class="menu_link" href="careers.html">Careers</a></li>
@@ -23,6 +25,15 @@
                 <a class="btn_link" href="#">Get Scootin</a>
             </div>
         </nav>
+        <div id="bar_menu" class="bar_menu close">
+            <ul class="menu">
+                <li class="menu_item"></li>
+                <li class="menu_item"><a class="menu_link" href="about.html">About</a></li>
+                <li class="menu_item"><a class="menu_link" href="lacation.html">Lacation</a></li>
+                <li class="menu_item"><a class="menu_link" href="careers.html">Careers</a></li>
+            </ul>
+            <a class="btn_link" href="#">Get Scootin</a>
+        </div>
         <div class="wrapper">
             <div class="container">
                 <h1 class="wrapper_title">Scooter sharing made simple</h1>
@@ -41,14 +52,17 @@
             <div class="container">
                 <div class="services_block">
                     <div class="service_type">
+                        <div class="path_box"></div>
                         <h4 class="service_title">Locate with app</h4>
                         <p class="service_subtitle">Use the app to find the nearest scooter to you. We are continuously placing scooters in the areas with most demand, so one should never be too far away. </p>
                     </div>
                     <div class="service_type">
+                        <div class="path_box2"></div>
                         <h4 class="service_title">Pick your scooter</h4>
                         <p class="service_subtitle">We show the most important info for the scooters closest to you. So you know how much charge they have left and can see roughly how much it will cost.</p>
                     </div>
                     <div class="service_type">
+                        <div class="path_box3"></div>
                         <h4 class="service_title">Enjoy the ride</h4>
                         <p class="service_subtitle">Scan the QR code and the bike will unlock. Retract the cable lock, put on a helmet, and you’re off! Always lock bikes away from walkways and accessibility ramps.</p>                        
                     </div>
@@ -100,13 +114,13 @@
         </div>
             <div class="footer_nav">
                 <div class="footer_block container">
-                <ul class="menu">
-                    <li class="menu_item"><a href="#"><img src="./img/logolight.svg" alt="logo scoot"></a></li>
-                    <li class="menu_item"><a class="menu_link" href="about.html">About</a></li>
-                    <li class="menu_item"><a class="menu_link" href="lacation.html">Lacation</a></li>
-                    <li class="menu_item"><a class="menu_link" href="careers.html">Careers</a></li>
-                </ul>
-                <div class="icons">
+                    <ul class="menu">
+                        <li class="menu_item"><a href="#"><img src="./img/logolight.svg" alt="logo scoot"></a></li>
+                        <li class="menu_item"><a class="menu_link" href="about.html">About</a></li>
+                        <li class="menu_item"><a class="menu_link" href="lacation.html">Lacation</a></li>
+                        <li class="menu_item"><a class="menu_link" href="careers.html">Careers</a></li>
+                    </ul>
+                    <div class="icons">
                     <svg width="0" height="0" class="hidden">
                         <symbol  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="facebook">
                         <path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"></path>
@@ -137,9 +151,29 @@
                         <use xlink:href="#instagram"></use>
                 </svg>
                 </a>
-            </div>
+                    </div>
                 </div>
             </div>
     </footer>
+    <script>
+       var modal = document.getElementById("bar_menu");
+        
+        var btn = document.getElementById("bar");
+        
+          var span = document.getElementsByClassName("close")[0];
+          
+          btn.onclick = function() {
+            modal.style.display = "block";
+          }
+            span.onclick = function() {
+              modal.style.display = "none";
+            }
+            
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+    </script>
 </body>
 </html>
