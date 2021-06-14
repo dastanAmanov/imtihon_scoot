@@ -737,6 +737,9 @@ nav .navigation .btn_link:hover {
 }
 
 @media only screen and (max-width: 480px) {
+  .container {
+    width: 100%;
+  }
   /*------------
         HEADER
       --------------*/
