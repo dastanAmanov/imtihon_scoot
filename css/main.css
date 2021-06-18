@@ -1003,7 +1003,7 @@ nav .navigation .btn_link:hover {
     display: block;
   }
   nav .logo {
-    padding: 22px 0 22px 80px;
+    margin: 22px 0 22px 92px;
   }
   nav .navigation {
     display: none;
@@ -1250,7 +1250,7 @@ nav .navigation .btn_link:hover {
         --------------*/
   .sign_up {
     max-width: 480px;
-    background-position: -244px bottom, -270px bottom, 213px bottom;
+    background-position: -244px bottom, -282px bottom, 274px bottom;
     background-size: 245px, 438px;
   }
   .sign_up .sign_up_block {
@@ -1298,7 +1298,7 @@ nav .navigation .btn_link:hover {
     padding-bottom: 25px;
   }
   .footer_nav .icons {
-    padding-left: 60px;
+    margin-left: 60px;
   }
 }
 
@@ -1373,7 +1373,7 @@ nav .navigation .btn_link:hover {
 
 @media only screen and (max-width: 480px) {
   .wrapper_careers {
-    margin-bottom: 0;
+    margin-bottom: 80px;
   }
   .wrapper_careers .careers__title {
     text-align: center;

@@ -15,7 +15,7 @@
             display: block;
         }
         .logo{
-            padding: 22px 0 22px 80px;
+            margin: 22px 0 22px 92px;
         }
         .navigation{
             display: none;
@@ -253,7 +253,7 @@
 
         .sign_up{
             max-width: 480px;
-            background-position: -244px bottom, -270px bottom, 213px bottom;
+            background-position: -244px bottom, -282px bottom, 274px bottom;
             background-size: 245px, 438px;
             .sign_up_block{
                 flex-wrap: wrap;
@@ -296,7 +296,7 @@
                 }
             }
             .icons{
-                padding-left: 60px;
+                margin-left: 60px;
             }
         }
 }
