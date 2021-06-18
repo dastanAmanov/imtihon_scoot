@@ -1,188 +1,163 @@
-.riding{
-    display: flex;
-    align-items: center;
-    margin-bottom: 180px;
-    .riding_left{
-        width: 50%;
-        .riding_title{
-            width: 550px;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 48px;
-            line-height: 48px;
-            color: $colorDarkNavy;
-            padding-left: 120px;
-            padding-bottom: 24px;
+.main_riding{
+   overflow: hidden; 
+    .riding{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 180px;
+        &:last-child{
+            margin-bottom: 0;
         }
-        .riding_subtitle{
-            width: 550px;
-            padding-left: 120px;
-            color: $colorDimGrey;
-        }
-        .riding_link{
-            @include link;
-            margin: 54px 120px;
-            &:hover{
-                @include link_hover;
+        
+        .riding_left{
+            width: 50%;
+            .riding_title{
+                width: 445px;
+                font-size: 48px;
+                line-height: 48px;
+                color: $colorDarkNavy;
+                padding-bottom: 24px;
+            }
+            .riding_subtitle{
+                width: 445px;
+                color: $colorDimGrey;
+            }
+            .riding_link{
+                @include link;
+                margin: 54px 0;
+                &:hover{
+                    @include link_hover;
+                }
             }
         }
-    }
-    .riding_right{
-        width: 50%;
-        .bg_img{
-            width: 447px;
-            height: 447px;
-            border-radius: 50%;
-            background-image: url(../img/riding_imgRight.jpg) ;
-            background-repeat: no-repeat;
-            position: relative;
-            margin-left: 80px;
-            &:before{
-                content: "";
-                display: block;
-                width: 450px;
-                height: 450px;
-                background-image: url(../img/bgscrilimg.png);
+        .riding_right{
+            width: 50%;
+            padding-left: 105px;
+            .bg_img{
+                width: 445px;
+                height: 445px;
+                border-radius: 50%;
+                background-image: url(../img/riding_imgRight.jpg) ;
                 background-repeat: no-repeat;
-                position: absolute;
-                right: -520px;
+                position: relative;
+                &:before{
+                    content: "";
+                    display: block;
+                    width: 445px;
+                    height: 445px;
+                    background-image: url(../img/bgscrilimg.png);
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    right: -485px;
+                }
+                &:after{
+                    content: "";
+                    display: block;
+                    width: 800px;
+                    height: 150px;
+                    background-image: url(../img/leftstrelka.svg);
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    top: 300px;
+                    left: -120px;
+                }
             }
-            &:after{
-                content: "";
-                display: block;
-                width: 800px;
-                height: 150px;
-                background-image: url(../img/leftstrelka.svg);
-                background-repeat: no-repeat;
-                position: absolute;
-                top: 300px;
-            }
-        }
-    }  
-} 
-.riding2{
-    display: flex;
-    align-items: center;
-    margin-bottom: 180px;
-.riding_left2{
-        width: 50%;
-        .riding_title2{
-            width: 550px;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 48px;
-            line-height: 48px;
-            color: $colorDarkNavy;
-            padding-bottom: 24px;
-        }
-        .riding_subtitle2{
-            width: 550px;
-            color: $colorDimGrey;
-        }
-        .riding_link2{
-            @include link;
-            margin: 54px 0;
-            &:hover{
-                @include link_hover;
-            }
-        }
-    }
-    .riding_right2{
-        width: 50%;
-        .bg_img2{
-            width: 447px;
-            height: 447px;
-            border-radius: 50%;
-            background-image: url(../img/riding_imgleft.jpg);
-            background-repeat: no-repeat;
-            position: relative;
-            margin-left: 120px;
-
-            &:before{
-                content: "";
-                display: block;
-                width: 450px;
-                height: 450px;
-                background-image: url(../img/bgscrilimg.png);
-                background-repeat: no-repeat;
-                position: absolute;
-                left: -480px;
-                z-index: -2;
-            }
-            &:after{
-                content: "";
-                display: block;
-                width: 800px;
-                height: 150px;
-                background-image: url(../img/imgStrlka.svg);
-                background-repeat: no-repeat;
-                position: absolute;
-                top: 20px;
-                left: -260px;
-            }
-        }
-    }
-}
-.riding{
-    display: flex;
-    align-items: center;
-    margin-bottom: 180px;
-    .riding_left{
-        width: 50%;
-        .riding_title{
-            width: 550px;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 48px;
-            line-height: 48px;
-            color: $colorDarkNavy;
-            padding-left: 120px;
-            padding-bottom: 24px;
-        }
-        .riding_subtitle{
-            width: 550px;
-            padding-left: 120px;
-            color: $colorDimGrey;
-        }
-        .riding_link{
-            @include link;
-            margin: 54px 120px;
-            &:hover{
-                @include link_hover;
-            }
-        }
-    }
-    .riding_right{
-        width: 50%;
-        .bg_img3{
-            width: 447px;
-            height: 447px;
-            border-radius: 50%;
-            background-image: url(../img/riding_imgright2.jpg);
-            background-repeat: no-repeat;
-            position: relative;
-            margin-left: 80px;
-            &:before{
-                content: "";
-                display: block;
-                width: 450px;
-                height: 450px;
-                background-image: url(../img/bgscrilimg.png);
-                background-repeat: no-repeat;
-                position: absolute;
-                right: -520px;
-            }
-            &:after{
-                content: "";
-                display: block;
-                width: 360px;
-                height: 150px;
-                background-image: url(../img/leftstrelka.svg);
-                background-repeat: no-repeat;
-                position: absolute;
-                right: -150px;
-                top: 70px;
-            }
-        }
+        }  
     } 
+    .riding2{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 180px;
+    .riding_left2{
+            width: 50%;
+            padding-left: 105px;
+            .riding_title2{
+                width: 445px;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 48px;
+                line-height: 48px;
+                color: $colorDarkNavy;
+                padding-bottom: 24px;
+            }
+            .riding_subtitle2{
+                width: 445px;
+                color: $colorDimGrey;
+            }
+            .riding_link2{
+                @include link;
+                margin: 54px 0;
+                &:hover{
+                    @include link_hover;
+                }
+            }
+        }
+        .riding_right2{
+            width: 50%;
+            .bg_img2{
+                width: 445px;
+                height: 445px;
+                border-radius: 50%;
+                background-image: url(../img/riding_imgleft.jpg);
+                background-repeat: no-repeat;
+                position: relative;
+                &:before{
+                    content: "";
+                    display: block;
+                    width: 445px;
+                    height: 445px;
+                    background-image: url(../img/bgscrilimg.png);
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    left: -480px;
+                    z-index: -2;
+                }
+                &:after{
+                    content: "";
+                    display: block;
+                    width: 800px;
+                    height: 150px;
+                    background-image: url(../img/imgStrlka.svg);
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    top: 20px;
+                    left: -260px;
+                }
+            }
+        }
+    }
+    .riding{
+        .riding_right{
+            .bg_img3{
+                width: 445px;
+                height: 445px;
+                border-radius: 50%;
+                background-image: url(../img/riding_imgright2.jpg);
+                background-repeat: no-repeat;
+                position: relative;
+                &:before{
+                    content: "";
+                    display: block;
+                    width: 445px;
+                    height: 445px;
+                    background-image: url(../img/bgscrilimg.png);
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    right: -485px;
+                }
+                &:after{
+                    content: "";
+                    display: block;
+                    width: 360px;
+                    height: 150px;
+                    background-image: url(../img/leftstrelka.svg);
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    right: -150px;
+                    top: 70px;
+                }
+            }
+        } 
+    }
 }

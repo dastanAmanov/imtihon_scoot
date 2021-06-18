@@ -1,0 +1,29 @@
+.our_team{
+    margin-top: 120px;
+    .profession{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 38px 64px 37px 40px;
+        margin-bottom: 24px;
+        background-color: $colorLightGrey;
+        .text_block{
+            .profession__title{
+                font-size: 24px;
+                line-height: 28px;
+                color: $colorDarkNavy;
+            }
+            .profession__subtitle{
+                color: $colorDarkNavy;
+            }
+        }
+        a{
+            @include link;
+            padding: 14px 67px;
+            &:hover{
+                @include link_hover;
+                padding: 12px 65px;
+            }
+        }
+    }
+}

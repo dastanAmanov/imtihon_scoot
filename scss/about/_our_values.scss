@@ -1,0 +1,44 @@
+.our_title{
+    text-align: center;
+    padding: 25px 0;
+    font-size: 48px;
+    line-height: 48px;
+    color: $colorDarkNavy;
+}
+.block_our{
+    display: flex;
+    .our_types{
+        width: 33.3333%;
+        margin-right: 30px;
+        position: relative;
+        &:last-child{
+            margin-right: 0;
+        }
+        .our_types__img{
+            border-radius: 50%;
+            margin: 70px 0 70px 55px;  
+        }
+        span{
+            background-color: $colorYellow;
+            padding: 34px;
+            border-radius: 50%;
+            font-size: 24px;
+            line-height: 28px;
+            color: $colorDarkNavy;
+            position: absolute;
+            top: 270px;
+            left: 130px; 
+        }
+        .our_types_title{
+            text-align: center;
+            font-size: 24px;
+            line-height: 28px;
+            color: $colorDarkNavy;
+            padding-bottom: 24px;
+        }
+        .our_types_subtitle{
+            text-align: center;
+            color: $colorDimGrey;
+        }
+    }
+}

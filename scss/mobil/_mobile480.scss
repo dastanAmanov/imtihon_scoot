@@ -1,4 +1,9 @@
 @media only screen and (max-width: 480px){
+
+    .container{
+        max-width: 320px;
+        margin: auto;
+    }
     /*------------
         HEADER
       --------------*/
@@ -8,11 +13,9 @@
         overflow-x: hidden;
         .bar{
             display: block;
-            padding-left: 32px;
         }
         .logo{
-            text-align: center;
-            padding: 22px 0 20px 0;
+            padding: 22px 0 22px 80px;
         }
         .navigation{
             display: none;
@@ -46,7 +49,7 @@
         .btn_link{
             @include link;
             position: absolute;
-            top: 500px;
+            top: 385px;
             left: 40px;
             color: #fff;
             padding: 14px 80px;
@@ -58,25 +61,26 @@
     }
     .wrapper{
         max-width: 480px;
-        overflow: hidden;
+        background-image: linear-gradient(rgba(73, 85, 103, 0.7),rgba(73, 85, 103, 0.7)), url(../img/mobile_img/mobile_header_bg.jpg);
+        background-position: top top;
         .wrapper_title{
-            max-width: 480px;
+            max-width: 320px;
             text-align: center;
-            padding: 115px 20px 0;
+            font-size: 40px;
+            line-height: 40px;
+            padding-top: 115px;
         }
         .wrapper_subtitle{
-            max-width: 400px;
-            text-align: center; 
+            max-width: 320px;
+            text-align: center;
+            padding: 0;
             &:before{
                 display: none;
             }
             &:after{
-                left: -302px;
-                top: 165px;
+                left: -333px;
+                top: 212px;
             }
-        }
-        .wrapper_link{
-            margin: 34px 0 153px 150px;
         }
     }
 
@@ -93,6 +97,7 @@
             flex-wrap: wrap;
             .service_type{
                 width: 100%;
+                padding-right: 0;
                 .path_box{
                     width: 20px;
                     height: 20px;
@@ -102,7 +107,7 @@
                     background-image: url(../img/path_scootin.svg);
                     background-position: center center;
                     background-repeat: no-repeat;
-                    margin-left: 200px;
+                    margin-left: 124px;
                     margin-top: 120px;
                 }
                 .path_box2{
@@ -114,7 +119,7 @@
                     background-image: url(../img/path_mobile_photo.svg);
                     background-position: center center;
                     background-repeat: no-repeat;
-                    margin-left: 200px;
+                    margin-left: 124px;
                 }
                 .path_box3{
                     width: 20px;
@@ -125,15 +130,15 @@
                     background-image: url(../img/path_scootin_human.svg);
                     background-position: center center;
                     background-repeat: no-repeat;
-                    margin-left: 200px;
+                    margin-left:124px;
                 }
                 .service_title{
-                    padding: 24px 0 24px 135px;
+                    padding: 24px 0;
+                    text-align: center;
                 }
                 .service_subtitle{
-                    max-width: 400px;
+                    max-width: 350px;
                     text-align: center;
-                    padding-left: 80px;
                     padding-bottom: 66px;
                 }
             }
@@ -143,151 +148,155 @@
     /*----------
         RIDING
       -------------*/
-     
-    .riding{
-        max-width: 480px;
-        overflow-x: hidden;
-        flex-wrap: wrap;
-        .riding_left{
-            width: 100%;
-            order: 2;
-            .riding_title{
-                max-width: 400px;
-                font-size: 32px;
-                line-height: 32px;
-                text-align: center;
-                padding-top: 56px;
-                padding-left: 70px;
-            }
-            .riding_subtitle{
-                max-width: 450px;
-                text-align: center;
-                padding-left: 30px;
-
-            }
-            .riding_link{
-                margin-left: 160px;
-                margin-right: 0;
-                margin-bottom: 0;
-            }
-        }
-        .riding_right{
-            width: 100%;
-            order: 1;
-            .bg_img{
-                max-width: 400px;
-                height: 400px;
-                margin-top: 100px;
-                margin-left: 42px;
-                background-position: center right;
-                &:before{
-                    display: none;
-                }
-                &:after{
-                    top: 234px;
-                }
-            }
-            .bg_img3{
-                max-width: 400px;
-                height: 400px;
-                margin-left: 41px;
-                &:before{
-                    display: none;
-                }
-                &:after{
-                    top: 0;
-                }
-            }
-        }
-    }
-    .riding2{
-        max-width: 480px;
-        overflow-x: hidden;
-        flex-wrap: wrap;
-        .riding_right2{
-            width: 100%;
-            .bg_img2{
-                max-width: 400px;
-                height: 400px;
-                margin-left: 40px;
-                &:before{
-                    display: none;
-                }
-                &:after{
-                    top: 0;
-                    left: -190px;
-                }
-            }
-        }
-        .riding_left2{
-            width: 100%;
-            .riding_title2{
-                width: 100%;
-                font-size: 32px;
-                line-height: 32px;
-                text-align: center;
-                padding: 56px 56px 0;
-            }
-            .riding_subtitle2{
-                max-width: 450px;
-                padding-top: 32px;
-                padding-left: 35px;
-                text-align: center;
-            }
-            .riding_link2{
-                margin-left: 160px;
-                margin-bottom: 0;
-            }
-        }
-    }
-
-    /*------------
-         FOOTER 
-       --------------*/
-
-    .sign_up{
-        max-width: 480px;
-        overflow-x: hidden;
-        background-position: -154% bottom, -154% bottom, 100% bottom;
-        .sign_up_block{
-            display: block;
-            padding: 102px 0 63px 0;
-            h2{
-                max-width: 400px;
-                font-size: 32px;
-                line-height: 32px;
-                text-align: center;
-                padding-left: 80px;
-            }
-            .img_block{
-                padding-top: 40px;
-                padding-left: 48px;
-                a{
-                    padding-left: 12px;
-                }
-            }
-        }
-    }
-    .footer_nav{
-        max-width: 480px;
-        overflow-x: hidden;
-        .footer_block{
-            display: block;
-            .menu{
-                display: block;
-                .menu_item{
+    .main_riding{
+        .riding{
+            width: 320px;
+            margin: 120px 0;
+            flex-wrap: wrap;
+            .riding_left{
+                width: 320px;
+                margin-bottom: 0px;
+                order: 1;
+                .riding_title{
+                    max-width: 320px;
+                    font-size: 32px;
+                    line-height: 32px;
                     text-align: center;
-                    padding-right: 644px;
-                    padding-top: 16px; 
-                    &:first-child{
-                        padding-top: 64px;
-                        padding-bottom: 25px;
+                    padding-top: 56px;
+                }
+                .riding_subtitle{
+                    max-width: 320px;
+                    text-align: center;
+
+                }
+                .riding_link{
+                    margin-left: 77px;
+                    margin-right: 0;
+                    margin-bottom: 0;
+                }
+            }
+            .riding_right{
+                width: 320px;
+                padding-left: 0;
+                .bg_img{
+                    width: 320px;
+                    height: 320px;
+                    background-position: center right;
+                    &:before{
+                        display: none;
+                    }
+                    &:after{
+                        top: 165px;
+                        left: -25px;
+                    }
+                }
+                .bg_img3{
+                    max-width: 320px;
+                    height: 320px;
+                    margin-left: 0px;
+                    &:before{
+                        display: none;
+                    }
+                    &:after{
+                        top: 0;
                     }
                 }
             }
         }
-        .icons{
-            padding-left: 134px;
+        .riding2{
+            max-width: 480px;
+            margin: 120px 0;
+            flex-wrap: wrap;
+            .riding_right2{
+                width: 100%;
+                order: 1;
+                .bg_img2{
+                    max-width: 320px;
+                    height: 320px;
+                    background-position: bottom;
+                    &:before{
+                        display: none;
+                    }
+                    &:after{
+                        top: 0;
+                        width: 455px;
+                        left: -190px;
+                    }
+                }
+            }
+            .riding_left2{
+                width: 320px;
+                padding-left: 0;
+                order: 1;
+                .riding_title2{
+                    width: 100%;
+                    font-size: 32px;
+                    line-height: 32px;
+                    text-align: center;
+                    padding: 56px 0 0;
+                }
+                .riding_subtitle2{
+                    max-width: 320px;
+                    padding-top: 32px;
+                    text-align: center;
+                }
+                .riding_link2{
+                    margin-left: 77px;
+                    margin-bottom: 0;
+                }
+            }
         }
     }
+        /*------------
+            FOOTER 
+        --------------*/
+
+        .sign_up{
+            max-width: 480px;
+            background-position: -244px bottom, -270px bottom, 213px bottom;
+            background-size: 245px, 438px;
+            .sign_up_block{
+                flex-wrap: wrap;
+                h2{
+                    max-width: 320px;
+                    font-size: 32px;
+                    line-height: 32px;
+                    text-align: center;
+                }
+                .img_block{
+                    padding-top: 40px;
+                    padding-left: 20px;
+                    a{
+                        padding-left: 0;
+                        img{
+                            width: 130px;
+                            height: 40px;
+                        }
+
+                    }
+                }
+            }
+        }
+        .footer_nav{
+            max-width: 480px;
+            .footer_block{
+                flex-wrap: wrap;
+                .menu{
+                    flex-direction: column;
+                    width: 100%;
+                    .menu_item{
+                        text-align: center;
+                        padding-top: 16px;
+                        padding-right: 0;
+                        &:first-child{
+                            padding-top: 64px;
+                            padding-bottom: 25px;
+                        }
+                    }
+                }
+            }
+            .icons{
+                padding-left: 60px;
+            }
+        }
 }

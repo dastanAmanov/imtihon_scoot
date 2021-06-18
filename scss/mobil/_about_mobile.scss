@@ -1,0 +1,65 @@
+@media only screen and (max-width: 480px){
+    .wrapper_about{
+        margin-bottom: 0;
+        background-image: linear-gradient(rgba(73, 85, 103, 0.7), rgba(73, 85, 103, 0.7)), url(../img/about_img/About_bg_img.jpg);
+        .about__title{
+            text-align: center;
+            padding-top: 110px;
+        }
+    }
+    .about__riding .riding2 .riding_right2 .bg_img2 {
+        background-position:  center;
+    }
+    .our_title{
+        font-size: 32px;
+        line-height: 32px;
+    }
+    .block_our{
+        flex-wrap: wrap;
+        .our_types{
+            width: 100%;
+            margin-right: 0;
+            .our_types__img{
+                margin-left: 40px;
+            }
+            span{
+                left: 114px;
+            }
+        }
+    }
+
+    .faqs_title{
+        font-size: 32px;
+        line-height: 32px;
+    }
+    .block_faqs{
+        flex-direction: column;
+        .faqs_left{
+            width: 320px;
+            .faqs_left__title{
+                text-align: center;
+                font-size: 24px;
+                line-height: 28px;
+                padding-bottom: 32px;
+            }
+            
+        }
+        .faqs_right{
+            width: 320px;
+            .faqs_block_text{
+                padding: 27px 35px 0;
+                .text__title{
+                    font-size: 18px;
+                    line-height: 24px;
+                    padding-right: 30px;
+                }
+                .text__img{
+                    right: 30px;
+                }
+                .text__subtitle{
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+}

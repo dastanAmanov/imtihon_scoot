@@ -1,0 +1,37 @@
+.lacation{
+    img{
+        width: 100%;
+    }
+    .citys{
+        display: none;
+    }
+}
+.your_city{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    h2{
+        width: 30%;
+        
+        font-size: 48px;
+        line-height: 48px;
+        color: $colorDarkNavy;
+    }
+    p{
+        width: 40%;
+        color: $colorDarkNavy;
+        margin-left: 70px;
+    }
+    .city__link{
+        width: 30%;
+        text-align: end;
+        a{
+            @include link;
+            &:hover{
+                @include link_hover;
+            }
+        }
+    }
+}

@@ -1,26 +1,26 @@
 nav{
-    display: flex;
-    align-items: center;
     position: fixed;
     right: 0;
     left: 0;
     z-index: 99;
-    background-color: $colorSnow;
+    background-color: $colorWhite;
+    .nav{
+        display: flex;
+        align-items: center;
+    }
     .bar{
         display: none;
     }
-    .logo{
-        margin-left: 120px;
-    }
     .navigation{
+        width: 100%;
         display: flex;
         justify-content: space-between;
-        align-items: center;
         padding: 24px 0;
         .menu{
             display: flex;
             align-items: center;
             padding-left: 40px;
+            
             .menu_item{
                 padding-right: 24px;
                 .menu_link{
@@ -33,7 +33,6 @@ nav{
         }
         .btn_link{
             @include link;
-            margin-right: 120px;
             &:hover{
                 @include link_hover;
             }
@@ -41,7 +40,7 @@ nav{
     }
 }
 .wrapper{
-    background-image: linear-gradient(rgba(73, 85, 103, 0.7),rgba(73, 85, 103, 0.7),), url(../img/headerBgImg.webp);
+    background-image: linear-gradient(rgba(73, 85, 103, 0.7),rgba(73, 85, 103, 0.7)), url(../img/headerBgImg.webp);
     background-repeat: no-repeat;
     background-position: top right;
     background-size: cover;

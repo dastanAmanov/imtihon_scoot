@@ -3,10 +3,11 @@
     margin: 0;
     box-sizing: border-box;
 }
-h1, h2, h3, h4, a{
+h1, h2, h3, h4, span, b, a{
     font-family: 'Space Mono', monospace;
+    font-weight: bold;
 }
-p, span{
+p  {
     font-family: 'Lexend Deca', sans-serif;
     font-size: 15px;
     line-height: 25px;
@@ -24,6 +25,6 @@ li{
 }
 body{
     max-width: 1440px;
-    margin: 0 auto;
-    overflow-x: hidden;
+    margin: auto;
+    // overflow-x: hidden;
 }

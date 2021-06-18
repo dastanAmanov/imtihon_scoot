@@ -1,0 +1,45 @@
+/*--------------
+    HEADER PAGE
+   -----------------*/
+
+@import './block/global';
+@import './block/template';
+@import './block/container';
+@import './block/header';
+@import './block/service';
+@import './block/riding';
+@import './block/footer';
+
+/*-------------
+    ABOUT PAGE 
+ -----------------*/
+
+@import './about/about_header';
+@import './about/our_values';
+@import './about/faqs';
+
+/*-------------
+    CAREERS
+    -----------------*/
+    @import './careers/careers_header';
+    @import './careers/careers_riding';
+    @import './careers/our_team';
+
+    /*-----------
+      LACATION 
+    ----------------*/
+    @import './lacation/wrapper_lacation';
+
+
+/*-------------
+     MEDIA 
+  --------------*/
+
+  /*------TABLET------*/
+@import './tablet/tablet_768';
+ 
+/*------ MOBILE -------*/
+@import './mobil/mobile480';
+@import './mobil/about_mobile';
+@import './mobil/careers_mobile';
+@import './mobil/lacation_mobile';

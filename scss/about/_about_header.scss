@@ -1,0 +1,33 @@
+.wrapper_about{
+    height: 200px;
+    background-image: linear-gradient(rgba(73, 85, 103, 0.7),rgba(73, 85, 103, 0.7)), url(../../img/about_img/About_bg_img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 120px;
+    .about__title{
+        font-size: 56px;
+        line-height: 56px;
+        padding-top: 72px;
+        color: $colorSnow;
+    }
+}
+.about__riding{
+    .riding{
+        margin-bottom: 115px;
+        .riding_right{
+            .bg_img{
+                background-image: url(../img/about_img/about_riding_img.jpg);
+                &:after{
+                    background-image: url(../img/about_img/about_strelka.svg);
+                    top: 260px;               
+                }
+            }
+        }
+    }
+    .riding2{
+    .riding_right2{
+        .bg_img2{
+            background-image: url(../img/about_img/about_riding_left_img.jpg);
+        }
+    }}
+}
