@@ -1040,8 +1040,8 @@ nav .navigation .btn_link:hover {
     background-color: #FCB72B;
     color: #F2F5F9;
     position: absolute;
-    top: 500px;
     left: 40px;
+    bottom: 145px;
     color: #fff;
     padding: 14px 80px;
   }
