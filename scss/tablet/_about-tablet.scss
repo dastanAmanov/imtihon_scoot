@@ -1,0 +1,31 @@
+@media only screen and (min-width:481px) and (max-width:768px){
+    .block_our{
+        flex-direction: column;
+        .our_types{
+            width: 100%;
+            .our_types__img{
+                margin-left: 223px;
+            }
+            span{
+                left: 297px;
+            }
+            .our_types_subtitle{
+                padding: 0 80px;
+            }
+        }
+    }
+
+    .block_faqs{
+        flex-direction: column;
+        .faqs_left{
+            width: 100%;
+            .faqs_left__title{
+                text-align: center;
+                margin-bottom: 24px;
+            }
+        }
+        .faqs_right{
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+@media only screen and (min-width:481px) and (max-width:768px){
+    .lacation{
+        img{
+            margin-bottom: 80px;
+        }
+        .citys{
+            visibility: hidden;
+            position: absolute;
+        }
+    }
+    .your_city{
+        a{
+            margin-top: 40px;
+        }
+    }
+}
